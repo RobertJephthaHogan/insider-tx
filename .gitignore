@@ -1,0 +1,5 @@
+environment
+.env
+node_modules
+keys
+keys_main.py

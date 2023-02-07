@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+passlib
+beanie
+bcrypt
+pydantic[email]
+requests
+httpx
+pytest
+bs4
+numpy
+pandas
+lxml
