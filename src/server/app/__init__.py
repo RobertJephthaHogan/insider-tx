@@ -65,8 +65,7 @@ async def websocket_endpoint(websocket: WebSocket):
                     pass
                 else:
                     newFilingsList.append(filing)
-                    await websocket.send_json(filing)
-                    print(str(filing) + "    ADDING TO NEW FILINGS AT   " + datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+                    print(f'{str(filing)}    ADDING TO NEW FILINGS AT   {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}')
 
             for newFiling in newFilingsList:
                 soup, filing = EdgarService.getFiling(newFiling)

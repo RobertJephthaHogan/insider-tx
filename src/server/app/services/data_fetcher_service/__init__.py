@@ -15,8 +15,8 @@ class DataFetcherService:
         try:
             p = r.json()[0]["price"]
         except IndexError:
-            p = "FMP FETCHING ERROR --- No Price Available For This Symbol" 
-            print(p)
+            p = "Not Available" 
+            print(f'Price not available for symbol: {ticker}')
         return p 
 
 
@@ -25,9 +25,9 @@ class DataFetcherService:
         r = requests.get(url)
         try:
             mc = r.json()[0]["marketCap"]
-        except IndexError:
-            mc = "FMP FETCHING ERROR --- No Market Cap Available For This Symbol"
-            print(p)
+        except IndexError as ex:
+            mc = "Not Available" 
+            print(f'MC not available for symbol: {ticker}')
         return mc 
 
 
