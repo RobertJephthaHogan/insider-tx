@@ -1,0 +1,38 @@
+
+
+
+
+.tx-details {
+    padding: 0px 30px;
+}
+
+.general-tx-details {
+    border: 1px solid #dfdfdf;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.general-info-section {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gen-info-sec-title {
+    font-size: 10px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gen-info-sec-value {
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

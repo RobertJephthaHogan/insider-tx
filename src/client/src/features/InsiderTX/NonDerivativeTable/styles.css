@@ -1,0 +1,36 @@
+
+
+
+
+.transaction-row {
+    width: 100%;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+}
+
+.holding-row {
+    width: 100%;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+}
+
+
+.filing-text {
+    font-weight: 500;
+    padding-left: 10px;
+    margin: auto 0px;
+}
+
+.expand-icon {
+    margin: auto 0px;
+}
+
+.transaction-banner:hover {
+    cursor: pointer;
+}
+
+.holding-banner:hover {
+    cursor: pointer;
+}

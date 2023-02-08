@@ -1,0 +1,36 @@
+
+
+
+
+
+.tx-body {
+    background-color: #f3f3f3;
+}
+
+.filing-title {
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.toggle-expand:hover {
+    cursor: pointer;
+    background-color: #f2f2f254;
+}
+
+.tx-tables {
+    display: flex;
+    padding-top: 10px;
+    margin: 2rem
+}
+
+.non-derivative-table {
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.derivative-table {
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    width: 100%;
+}
