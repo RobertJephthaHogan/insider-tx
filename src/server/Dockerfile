@@ -1,12 +1,23 @@
 FROM python:3.9-alpine
-COPY ./app /src/app
-COPY ./requirements.txt /src
 
-WORKDIR /src
+WORKDIR /code
+COPY ./app /code/app
+COPY ./main.py /code
+COPY ./requirements.txt /code
 
-RUN pip install -r initial_requirements.txt
+
+RUN apk add --no-cache --update \
+    python3 python3-dev gcc \
+    gfortran musl-dev g++ \
+    libffi-dev openssl-dev \
+    libxml2 libxml2-dev \
+    libxslt libxslt-dev \
+    libjpeg-turbo-dev zlib-dev
+
+RUN pip install --upgrade pip
+RUN pip install --upgrade cython
 
 
-EXPOSE 8000
+RUN pip install -r requirements.txt
 
 CMD ["python", "main.py"]
